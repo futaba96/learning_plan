@@ -1,0 +1,219 @@
+@charset "UTF-8";
+/* 共通部分
+---------------------------*/
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'M PLUS Rounded 1c"', sans-serif;
+    background: linear-gradient(to bottom, #043fe3, #cfe7f3);
+}
+
+h1 {
+    padding: 1% 0;
+    font-size: 32px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 26px;
+    text-align: center;
+    border-bottom: 1px solid #b8b4b4;
+    text-indent: 2.5rem;
+    letter-spacing: 1.5rem;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 75%;
+    margin: 30px auto;
+    padding: 20px 50px;
+}
+
+/* フォーム */
+input[type="text"],
+input[type="date"] {
+    border: 1px solid #8e7e7e;
+
+    border-radius: 9px;
+    width: 100%;
+    padding: 10px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.form-area,
+.incomplete-area,
+.complete-area {
+    background-color: #ffffff;
+    border: 1px solid;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.form-area {
+    padding: 20px;
+}
+
+/* フォームのボタン */
+.btn {
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+    width: 90%;
+}
+
+.submit-btn {
+    color: #ffffff;
+    background-color: #ff25ba;
+    width: 100%;
+    padding: 10px;
+    text-indent: 2rem;
+    border-radius: 5px;
+    letter-spacing: 2rem;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #c86eb6;
+}
+
+/*(編集エリアのボタン)*/
+.return-btn {
+    color: #ffffff;
+    background-color: #260ade;
+    width: 100%;
+    padding: 10px;
+    text-indent: 2rem;
+    border-radius: 5px;
+    letter-spacing: 2rem;
+    margin-top: 10px;
+}
+
+.return-btn:hover {
+    background-color: #7062c9;
+}
+
+/*タイトル*/
+.title {
+    color: white;
+}
+/*(未達成、完了、編集)*/
+.sub-title {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/*未達成と完了についてる小さいボタン*/
+.done-btn,
+.edit-btn,
+.delete-btn,
+.comp-btn {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    height: 35px;
+}
+
+.done-btn {
+    background-color: #2306e0;
+}
+
+.edit-btn {
+    background-color: #f15922;
+}
+
+.delete-btn {
+    background-color: #ed1c24;
+}
+
+.comp-btn {
+    background-color: #10c707;
+}
+
+.done-btn:hover {
+    background-color: #7768d8;
+}
+.edit-btn:hover {
+    background-color: #edccb7;
+}
+.delete-btn:hover {
+    background-color: #d66d6f;
+}
+.comp-btn:hover {
+    background-color: #93ce91;
+}
+
+label {
+    font-weight: bold;
+}
+
+/*完了期限と完了日がずれるから合わせる*/
+.plan-due-date,
+.plan-completion-date {
+    width: 15%;
+}
+
+/*期限切れ*/
+.expired {
+    color: red;
+}
+
+/* エラーメッセージ */
+.errors {
+    color: rgba(205, 15, 15, 0.889);
+    background-color: #f8d0c9;
+    list-style: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+
+.done-link-area,
+.edit-link-area,
+.delete-link-area {
+    width: 10%;
+}
+
+/*未完成と完了の中身*/
+.plan-list {
+    width: 100%;
+    text-align: left;
+    padding: 10px 40px;
+}
+
+/*レスポンシブ対応*/
+@media (max-width: 600px) {
+    .wrapper {
+        width: 600px;
+    }
+}
+
+.done-btn,
+.edit-btn,
+.delete-btn,
+.comp-btn {
+    width: 100%;
+}
+
+/*レスポンシブ対応*/
+@media (max-width: 800px) {
+    .wrapper {
+        width: 700px;
+    }
+}
+
+.done-btn,
+.edit-btn,
+.delete-btn,
+.comp-btn {
+    width: 100%;
+}
